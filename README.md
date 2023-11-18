@@ -87,7 +87,7 @@ sample run outputs (shown in inference_out.csv):
 Notes on improvement of specifically the base model for practical/production settings:
  - The base model assumes that longer texts have more logical reasoning. Clearly, this is not always true, so long nonsensical texts may also be classified as "high quality".
     - ex. the landing page of a news website, where there is large amount of text due to various article options
-    - possible solution: differenciate between text pulled from different kinds of html sections, note size of html component as relative importance measure
+    - possible solution: differentiate between text pulled from different kinds of html sections, note size of html component as relative importance measure
  - The entire pipeline is also largely dependent on how well the html and text parsing is. Improving this would allow for more control on the training side, as the features would be more reliable. Datasets can also be parsed for this information, but would require some filtering of the data first.
  - There are a few failure cases that come from the vauge definition of "logical reasoning", i.e. a landing page of a product, where there is lots of related text, but not really much logical reasoning.
  - Sometimes, less coherency can actually indicate more logical reasoning (i.e. two ideas coming to a conclusion, rather than two similar ideas repeated again).
