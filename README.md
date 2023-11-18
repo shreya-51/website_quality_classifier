@@ -76,7 +76,7 @@ notebooks:
 sample run directory: 
  - urls.txt contains our starting list of urls (two suggested urls used for demonstration purposes)
  - prepare_data.ipynb takes the list of urls and outputs features_test.csv (a list of features for each url)
- - main.ipynb uses the trained model (rf_model.joblib) and used scalar (scalar.joblib) to generate the predictions for the urls in urls_test.txt (output stored in inference_out.csv)
+ - main.ipynb uses the trained model (rf_model.joblib) and used scaler (scaler.joblib) to generate the predictions for the urls in urls_test.txt (output stored in inference_out.csv)
 
 sample run outputs (shown in inference_out.csv):
  - https://waitbutwhy.com/2017/04/neuralink.html
