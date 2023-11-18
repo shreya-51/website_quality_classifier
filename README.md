@@ -35,7 +35,7 @@ For each url, the metric was calculated as follows:
 This method was chosen to find a metric that (1) could be calculated (given limited resources) and (2) in some way lightly represented how "coherent" different parts of the text were. This was motivated by [this](#overview).
 
 Other techniques attempted:
- - Averaging similarities between all setnences (too computationally demanding for available resources)
+ - Averaging similarities between all sentences (too computationally demanding for available resources)
  - Sentence embeddings using various embedding models (upon manual inspected, cross-encoder provided slightly better results)
 
 ## Training base model
