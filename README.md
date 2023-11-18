@@ -7,7 +7,7 @@
         - ex: Medium article --> "high quality" --> text from webpage: ['Coffee can be made on the stove.', 'Coffee can also be made in a french press.']
  2. base model trained using this custom metric as labels
  3. given new incoming data, base model can then be updated to adjust the model
- 4. goal: over a longer period of time/enough user data, model could be trained on preference data, removing dependence on the custom metric abd ubstead emulating the real function that defines the users' ideas of "high quality" and "low quality" webpages
+ 4. goal: over a longer period of time/enough user data, model could be trained on preference data, removing dependence on the custom metric and instead emulating the real function that defines the users' ideas of "high quality" and "low quality" webpages
  * extra: provided function to tune between precision and recall while choosing model
 
 
