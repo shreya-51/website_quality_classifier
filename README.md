@@ -11,7 +11,7 @@
  * extra: provided function to tune between precision and recall while choosing model
 
 
-Note: Found it very hard to quantify "logical reasoning". An interesting approach attempted: poking the latent space of an autoencoder to find the "logical reasoning axis", then projecting various passages along this access to see how much "logical reasoning" it had. Could possibly work if "logical resoning" was further defined + more data + more computational resources.
+Note: Found it very hard to quantify "logical reasoning". An interesting approach attempted: poking the latent space of an autoencoder to find the "logical reasoning axis", then projecting various passages along this access to see how much "logical reasoning" it had. Could possibly work if "logical resoning" was further defined + more of the data was parsed + more computational resources.
 
 
 ## Data Preperation
@@ -32,7 +32,7 @@ For each url, the metric was calculated as follows:
 4. average of the 10 sentence similarity scores were taken
 5. metric = sigmoid(avg_sentence_similarity * sentence_count * scaling_factor=0.01)
 
-This method was chosen to find a metric that (1) could be calculated (given limited resources) and (2) in some way lightly represented how "coherent" different parts of the text were. This was motivated by [this].
+This method was chosen to find a metric that (1) could be calculated (given limited resources) and (2) in some way lightly represented how "coherent" different parts of the text were. This was motivated by [this](#overview).
 
 Other techniques attempted:
  - Averaging similarities between all setnences (too computationally demanding for available resources)
@@ -40,7 +40,7 @@ Other techniques attempted:
 
 ## Training base model
 
-Features: [here]<br>
+Features: [here](#data-preperation)<br>
 Labels: for each url, if metric >= 0.51 then "high quality", else "low quality"<br>
 Model: RandomForest
 
