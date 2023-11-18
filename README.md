@@ -55,7 +55,7 @@ Other techniques attempted:
 
 ## Adding more data
 
-In order to add more data (i.e. adjust as per user feedback), the RandomForestClassifier was refited on new data.
+In order to add more data (i.e. adjust as per user feedback), the RandomForestClassifier was refitted on new data.
 
 Pros: worked quickly with the already defined RandomForest model<br>
 Cons: can quickly increase complexity as additional trees are added each time we add data
