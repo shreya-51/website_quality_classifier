@@ -84,7 +84,7 @@ sample run outputs (shown in inference_out.csv):
  - https://www.deviantart.com/estigiakinslayer/art/Snow-Leopard-993653025
     - inference label: 0 (i.e. "low quality")
 
-Notes on improvement of the base model specifically:
+Notes on improvement of specifically the base model for practical/production settings:
  - The base model assumes that longer texts have more logical reasoning. Clearly, this is not always true, so long nonsensical texts may also be classified as "high quality".
     - ex. the landing page of a news website, where there is large amount of text due to various article options
     - possible solution: differenciate between text pulled from different kinds of html sections, note size of html component as relative importance measure
