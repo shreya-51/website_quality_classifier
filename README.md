@@ -90,5 +90,6 @@ Notes on improvement of the base model specifically:
     - possible solution: differenciate between text pulled from different kinds of html sections, note size of html component as relative importance measure
  - The entire pipeline is also largely dependent on how well the html and text parsing is. Improving this would allow for more control on the training side, as the features would be more reliable. Datasets can also be parsed for this information, but would require some filtering of the data first.
  - There are a few failure cases that come from the vauge definition of "logical reasoning", i.e. a landing page of a product, where there is lots of related text, but not really much logical reasoning.
+ - Sometimes, less coherency can actually indicate more logical reasoning (i.e. two ideas coming to a conclusion, rather than two similar ideas repeated again).
  - Given more computational power, embedding either all, a summary, or some part of the html and/or text could provide interesting results.
 
